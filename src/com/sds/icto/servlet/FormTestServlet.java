@@ -38,9 +38,18 @@ public class FormTestServlet extends HttpServlet {
 		String id = request.getParameter("id");
 		String pw = request.getParameter("pw");
 		String gender = request.getParameter("gender");
-		String country = request.getParameter("country");
-		String[] hobby = request.getParameterValues("hobby");
-		String comment = request.getParameter("comment");
+		String country = "";
+		if(request.getParameter("country") != null){
+			country = request.getParameter("country");
+		}
+		String[] hobby= {};
+		if(request.getParameterValues("hobby") != null){
+			hobby = request.getParameterValues("hobby");
+		}
+		String comment = "";
+		if( request.getParameter("comment") != null){
+			comment = request.getParameter("comment");
+		}
 		
 		response.setContentType("text/html; charset=utf-8"); 
 		PrintWriter out = response.getWriter();

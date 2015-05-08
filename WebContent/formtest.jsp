@@ -11,18 +11,18 @@
 	<!-- text/radio/select/textarea/password/checkbox ....  -->
 		<table>
 			<tr>
-				<td>ID</td>
-				<td><input type="text" name="id"></td>
+				<td>ID*</td>
+				<td><input type="text" name="id" required="required"></td>
 			</tr>
 			<tr>
-				<td>PW</td>
-				<td><input type="password" name="pw"></td>
+				<td>PW*</td>
+				<td><input type="password" name="pw" required="required"></td>
 			</tr>
 			<tr>
-				<td>GENDER</td>
+				<td>GENDER*</td>
 				<td>
-					<input type="radio" name="gender" value="MALE">MALE
-					<input type="radio" name="gender" value="FEMALE">FEMALE
+					<input type="radio" name="gender" value="MALE" required="required">MALE
+					<input type="radio" name="gender" value="FEMALE" required="required">FEMALE
 				</td>
 			</tr>
 			<tr>
